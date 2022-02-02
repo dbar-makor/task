@@ -1,0 +1,19 @@
+.App {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 380px 900px 100px 380px;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App > Main {
+  grid-row: 2 / 3;
+  grid-column: span 12;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
